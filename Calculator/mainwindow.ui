@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>282</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(49,51,53);
+border-radius: 10px;
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="choice">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monaco</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+background-color:#86888A;
+color:white;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Degrees/Minutes</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Minutes/Degrees</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Degrees/Seconds</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Seconds/Degrees</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>261</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QPushButton" name="b4">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="b8">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="bmultiply">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>*</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="equally">
+       <property name="styleSheet">
+        <string>
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="bh">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="NoBrush">
+            <color alpha="128">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="NoBrush">
+            <color alpha="128">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Base">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>119</red>
+             <green>221</green>
+             <blue>119</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="NoBrush">
+            <color alpha="128">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border-radius: 5px;
+background-color:#77dd77;
+font-size: 18px;
+color:white;
+}
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="b9">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="bzero">
+       <property name="styleSheet">
+        <string>
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="shift">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>shift</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="b1">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="bplus">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="bdivision">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>÷</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="b6">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QPushButton" name="bdel">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border-radius: 5px;
+background-color:#77dd77;
+font-size: 18px;
+color:white;
+}
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>DEL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="b2">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="bleft">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>←</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="tan">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>tan</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="bdot">
+       <property name="styleSheet">
+        <string>
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="b3">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="b7">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="bpi">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>π</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="b5">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="sin">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>sin</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="bright">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>→</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QPushButton" name="bminus">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="bcos">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+       </property>
+       <property name="text">
+        <string>cos</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="blbracket">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>170</y>
+      <width>41</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+    </property>
+    <property name="text">
+     <string>(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="brbracket">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>170</y>
+      <width>40</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+border-radius: 5px;
+background-color:#86888A;
+font-size: 18px;
+color:white;
+}
+
+
+QPushButton:pressed{
+background-color:#CACCCE;
+}</string>
+    </property>
+    <property name="text">
+     <string>)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Screen">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>10</y>
+      <width>261</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color:#c1c1c1;</string>
+    </property>
+    <property name="text">
+     <string>  Press Shift + H to show options.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="shiftlabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color:#c1c1c1;
+color:#77dd77;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>261</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+background-color:#c1c1c1;
+
+</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;******************************&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Press Shift + Button - &amp;gt; Function.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;******************************&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;shift + DEL -&amp;gt; Delete all line.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;shift + H -&amp;gt; Show information.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;shift + cos/sin/tan -&amp;gt; arc/cos/sin/tan.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;******************************&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Choice function + shit -&amp;gt; work with this function.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Example:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Degrees/Minutes + shift -&amp;gt; Converts degrees to minutes.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;******************************&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>textEdit</zorder>
+   <zorder>choice</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>blbracket</zorder>
+   <zorder>brbracket</zorder>
+   <zorder>Screen</zorder>
+   <zorder>shiftlabel</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
