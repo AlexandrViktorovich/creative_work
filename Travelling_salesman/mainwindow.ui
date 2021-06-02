@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#2f2fa2</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Display">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border: 2px solid #F64C72;
+</string>
+    </property>
+    <property name="text">
+     <string>Enter the number of cities </string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="LinksTable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>431</width>
+      <height>291</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="QPushButton" name="Accept_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#2F2FA2;
+color:#F64C72;
+border: 2px solid #F64C72;
+}
+QPushButton:hover {
+background-color:#F64C72;
+color:#2F2FA2;
+}</string>
+       </property>
+       <property name="text">
+        <string>Remove city</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="Accept">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#2F2FA2;
+color:#F64C72;
+border: 2px solid #F64C72;
+}
+QPushButton:hover {
+background-color:#F64C72;
+color:#2F2FA2;
+}</string>
+       </property>
+       <property name="text">
+        <string>Add city</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="Visual">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#2F2FA2;
+color:#F64C72;
+border: 2px solid #F64C72;
+}
+QPushButton:hover {
+background-color:#F64C72;
+color:#2F2FA2;
+}</string>
+       </property>
+       <property name="text">
+        <string>Drawing</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="Answer">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#2F2FA2;
+color:#F64C72;
+border: 2px solid #F64C72;
+}
+QPushButton:hover {
+background-color:#F64C72;
+color:#2F2FA2;
+}</string>
+       </property>
+       <property name="text">
+        <string>Answer</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Create">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>100</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:#2F2FA2;
+color:#F64C72;
+border: 2px solid #F64C72;
+}
+QPushButton:hover {
+background-color:#F64C72;
+color:#2F2FA2;
+}</string>
+    </property>
+    <property name="text">
+     <string>Create</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="City">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border: 2px solid #F64C72;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Check">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>431</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
